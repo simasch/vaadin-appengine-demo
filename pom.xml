@@ -117,6 +117,7 @@
                 <version>2.4.2</version>
                 <configuration>
                     <projectId>organic-gecko-350604</projectId>
+                    <version>GCLOUD_CONFIG</version>
                 </configuration>
             </plugin>
         </plugins>
