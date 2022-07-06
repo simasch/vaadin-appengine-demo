@@ -27,4 +27,4 @@ jobs:
             ${{ runner.os }}-maven-
 
       - name: Maven Build and AppEngine Deploy
-        run: mvn -B package appengine:deploy -Pproduction -DserviceAccountKeyFile=${{ secrets.GCP_CREDENTIALS }}
+        run: mvn -B package appengine:cloudSdkLogin appengine:deploy -Pproduction -DserviceAccountKeyFile=${{ secrets.GCP_CREDENTIALS }}
