@@ -17,6 +17,7 @@ import com.vaadin.flow.component.html.UnorderedList;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.RouterLink;
 import io.seventytwo.demo.gae.views.helloworld.HelloWorldView;
+import io.seventytwo.demo.gae.views.people.PeopleView;
 
 /**
  * The main view is a top-level placeholder for other views.
@@ -115,6 +116,7 @@ public class MainLayout extends AppLayout {
     private MenuItemInfo[] createMenuItems() {
         return new MenuItemInfo[]{ //
                 new MenuItemInfo("Hello World", "la la-globe", HelloWorldView.class), //
+                new MenuItemInfo("People", "las la-users", PeopleView.class), //
 
         };
     }
