@@ -1,12 +1,26 @@
 # AppEngineDemo
 
-This project can be used as a starting point to create your own Vaadin application with Spring Boot.
+This project can be used as a starting point to create your own Vaadin application with Spring Boot that runs on Google Cloud App Engine.
+
+
 It contains all the necessary configuration and some placeholder files to get you started.
+
+## Deploy to GCP App Engine
+
+```.github/workflows/ci.yml``` shows how to use GitHub actions to deploy to GCP.
+
+## Local development
+
+To run the application locally start a local PostgreSQL database (for example with Docker see scripts/start_postgres_cmd).
+
+Then you have to start the application with the profile "dev" activated.
+
+    -Dspring.profiles.active=de
 
 ## Running the application
 
 The project is a standard Maven project. To run it from the command line,
-type `mvnw` (Windows), or `./mvnw` (Mac & Linux), then open
+type `mvnw -Dspring.profiles.active=de` (Windows), or `./mvnw -Dspring.profiles.active=de` (Mac & Linux), then open
 http://localhost:8080 in your browser.
 
 You can also import the project to your IDE of choice as you would with any
