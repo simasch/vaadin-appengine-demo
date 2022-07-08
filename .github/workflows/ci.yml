@@ -30,7 +30,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
-      - name: GCP Authorization
+      - name: GCP Authentication
         uses: google-github-actions/auth@v0
         with:
           workload_identity_provider: 'projects/839267018602/locations/global/workloadIdentityPools/playground-pool/providers/gha-provider'
