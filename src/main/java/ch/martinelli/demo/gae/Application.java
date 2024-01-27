@@ -1,6 +1,5 @@
-package io.seventytwo.demo.gae;
+package ch.martinelli.demo.gae;
 
-import com.vaadin.flow.component.dependency.NpmPackage;
 import com.vaadin.flow.component.page.AppShellConfigurator;
 import com.vaadin.flow.server.PWA;
 import com.vaadin.flow.theme.Theme;
@@ -18,7 +17,6 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 @SpringBootApplication
 @Theme(value = "appenginedemo")
 @PWA(name = "AppEngineDemo", shortName = "AppEngineDemo", offlineResources = {})
-@NpmPackage(value = "line-awesome", version = "1.3.0")
 public class Application extends SpringBootServletInitializer implements AppShellConfigurator {
 
     public static void main(String[] args) {

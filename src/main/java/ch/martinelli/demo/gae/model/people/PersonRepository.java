@@ -1,4 +1,4 @@
-package io.seventytwo.demo.gae.model.people;
+package ch.martinelli.demo.gae.model.people;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
