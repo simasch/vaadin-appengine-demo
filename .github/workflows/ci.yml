@@ -33,7 +33,7 @@ jobs:
       - name: GCP Authentication
         uses: google-github-actions/auth@v2
         with:
-          project_id: 'vaadin-and-jooq'
+          service_account: 'vaadin-and-jooq@appspot.gserviceaccount.com'
           workload_identity_provider: 'projects/1007291544300/locations/global/workloadIdentityPools/github-pool/providers/github-provider'
 
       - name: Maven Build and AppEngine Deploy
