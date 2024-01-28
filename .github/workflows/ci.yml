@@ -34,7 +34,7 @@ jobs:
         uses: google-github-actions/auth@v2
         with:
           service_account: 'vaadin-and-jooq@appspot.gserviceaccount.com'
-          workload_identity_provider: 'projects/1007291544300/locations/global/workloadIdentityPools/github-pool/providers/github-provider'
+          workload_identity_provider: 'projects/1007291544300/locations/global/workloadIdentityPools/github/providers/my-repo'
 
       - name: Maven Build and AppEngine Deploy
         run: mvn -B package appengine:deploy -Pproduction
