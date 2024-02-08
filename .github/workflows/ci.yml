@@ -36,5 +36,5 @@ jobs:
           service_account: '${{ secrets.SERVICE_ACCOUNT }}'
           workload_identity_provider: '${{ secrets.WORKLOAD_IDENTITY_PROVIDER }}'
 
-      - name: Maven Build and AppEngine Deploy
-        run: mvn -B package appengine:deploy -Pproduction
+      - name: Maven Package
+        run: mvn -B package -Pproduction
