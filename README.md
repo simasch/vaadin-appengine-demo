@@ -15,12 +15,12 @@ To run the application locally start a local PostgreSQL database (for example wi
 
 Then you have to start the application with the profile "dev" activated.
 
-    -Dspring.profiles.active=de
+    -Dspring.profiles.active=dev
 
 ## Running the application
 
 The project is a standard Maven project. To run it from the command line,
-type `mvnw -Dspring.profiles.active=de` (Windows), or `./mvnw -Dspring.profiles.active=de` (Mac & Linux), then open
+type `mvnw -Dspring.profiles.active=dev` (Windows), or `./mvnw -Dspring.profiles.active=dev` (Mac & Linux), then open
 http://localhost:8080 in your browser.
 
 You can also import the project to your IDE of choice as you would with any
